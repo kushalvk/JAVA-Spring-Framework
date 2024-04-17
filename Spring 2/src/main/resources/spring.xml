@@ -2,11 +2,58 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-<!--    Above bean deffination is copy from online -->
+<!--    Above bean definition is copy from online -->
 
 <!--    following tag is writed-->
-    <bean id="alien" class="org.vk.Alien">
+<!--    <bean id="alien1" class="org.vk.Alien" scope="prototype"> </bean>  -->
+
+    <bean id="alien1" class="org.vk.Alien" autowire="byType">
+        <!-- primitive variable (value) -->
+        <!-- <property name="age1" value="25"> </property> --> <!-- Dependency Injection / Setter Injection (Inject A value) -->
+        <!-- value :- this parameter is use a setter Method that is compulsory in your class Ex:- Alien class -->
+        <!-- if the scope is singleton when you run then object of alien will automatically call but in prototype you it can't -->
+        <!-- scope = singleton(Default):-  1 Bean Multi object work as once  -->
+        <!-- scope = prototype:-  1 Bean Multi object work as different   -->
+
+        <!-- reference variable (ref) -->
+<!--        <property name="lap" ref="lap1"/>-->
+        <!-- 'lap1' is reference of the lap1 id of the "bean" (without "bean" tag of Laptop it can not work) -->
+        <!-- ref :- this parameter is use a setter Method that is compulsory in your class Ex:- Alien class -->
+
+        <!-- constructor injection (parameterize) -->
+            <!-- two parameterize -->
+            <!-- maintain 'sequence' of parameters otherwise -->
+<!--        <constructor-arg value="26" />-->
+<!--        <constructor-arg ref="lap1" />-->
+            <!-- mention 'type' of it otherwise-->
+<!--        <constructor-arg type="org.vk.Laptop" ref="lap1" />-->
+<!--        <constructor-arg type="int" value="26" /> -->
+            <!-- mention to give an 'index'-->
+<!--        <constructor-arg index="1" ref="lap1" />-->
+<!--        <constructor-arg index="0" value="26" />-->
+        <!-- 'lap1' is reference of the lap1 id of the "bean" (without "bean" tag of Laptop it can not work) -->
+
+        <!-- autowire byname -->
+            <!-- byname-->
+        <property name="age1" value="20" />
+<!--        <property name="com" ref="lap1" />--> <!-- comment it and check it 'autowire' or not-->
+        <!-- 'autowire' while you can not mention it's property as above -->
+            <!-- bytype -->
     </bean>
 
-<!--    you can add a multiple class by defainding above tag-->
+    <!-- autowire byname -->
+        <!-- byname-->
+    <!-- <bean id="com" class="org.vk.Laptop"> </bean> --> <!-- check it 'autowire' or not using name "com"-->
+<!--    <bean id="com" class="org.vk.Desktop"> </bean>-->
+        <!-- bytype -->
+<!--    <bean id="com1" class="org.vk.Laptop"> </bean>-->
+    <bean id="com1" class="org.vk.Desktop"> </bean>
+
+<!--    <bean id="alien2" class="org.vk.Alien">-->  <!-- you can also create a second object of a same Class -->
+<!--    </bean>-->
+
+<!--    <bean id="lap1" class="org.vk.Laptop">-->
+<!--    </bean>-->
+
+<!--    you can add a multiple class by defining above tag -->
 </beans>
