@@ -1,0 +1,12 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    Above bean deffination is copy from online -->
+
+<!--    following tag is writed-->
+    <bean id="alien" class="org.vk.Alien">
+    </bean>
+
+<!--    you can add a multiple class by defainding above tag-->
+</beans>

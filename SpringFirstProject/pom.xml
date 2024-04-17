@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.vk</groupId>
-	<artifactId>SpringFirstProject</artifactId>
+	<artifactId>SpringFirstProject 1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SpringFirstProject</name>
 	<description>First project for Spring Boot</description>
