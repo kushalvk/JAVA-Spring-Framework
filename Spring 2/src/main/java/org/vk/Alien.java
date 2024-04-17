@@ -6,7 +6,7 @@ public class Alien {
     private int age1;
 
     public Alien() {
-//        System.out.println("Alien Object Created");
+        System.out.println("Alien Object Created");
     }
 //    public Alien(int age1, Laptop lap) {
 //        this.age1 = age1;

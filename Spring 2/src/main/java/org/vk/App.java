@@ -20,10 +20,12 @@ public class App
 
         obj1.code();
 
-//        Alien obj2 = (Alien) context.getBean("alien1");
+//        Alien obj2 = context.getBean("alien1", Alien.class); // create an object of container without type casting
 //        System.out.println(obj2.age);
 //        obj2.code();
 
 //        The both the object of "alien1" class is work as once.(One Bean multi object = once) (it's called "Singleton" Bean)
+
+        Desktop obj3 = context.getBean(Desktop.class);
     }
 }

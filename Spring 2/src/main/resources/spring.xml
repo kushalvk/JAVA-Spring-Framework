@@ -13,7 +13,7 @@
         <!-- value :- this parameter is use a setter Method that is compulsory in your class Ex:- Alien class -->
         <!-- if the scope is singleton when you run then object of alien will automatically call but in prototype you it can't -->
         <!-- scope = singleton(Default):-  1 Bean Multi object work as once  -->
-        <!-- scope = prototype:-  1 Bean Multi object work as different   -->
+        <!-- scope = prototype:-  1 Bean Multi object work as different  -->
 
         <!-- reference variable (ref) -->
 <!--        <property name="lap" ref="lap1"/>-->
@@ -33,21 +33,32 @@
 <!--        <constructor-arg index="0" value="26" />-->
         <!-- 'lap1' is reference of the lap1 id of the "bean" (without "bean" tag of Laptop it can not work) -->
 
-        <!-- autowire byname -->
+        <!-- autowire -->
             <!-- byname-->
         <property name="age1" value="20" />
-<!--        <property name="com" ref="lap1" />--> <!-- comment it and check it 'autowire' or not-->
+        <property name="com" ref="com1" />  <!-- comment it and check it 'autowire' or not -->
         <!-- 'autowire' while you can not mention it's property as above -->
             <!-- bytype -->
     </bean>
 
-    <!-- autowire byname -->
+    <!-- autowire -->
         <!-- byname-->
     <!-- <bean id="com" class="org.vk.Laptop"> </bean> --> <!-- check it 'autowire' or not using name "com"-->
 <!--    <bean id="com" class="org.vk.Desktop"> </bean>-->
         <!-- bytype -->
-<!--    <bean id="com1" class="org.vk.Laptop"> </bean>-->
-    <bean id="com1" class="org.vk.Desktop"> </bean>
+    <!-- <bean id="com1" class="org.vk.Laptop"> </bean> -->
+<!--    <bean id="com2" class="org.vk.Desktop"> </bean>-->
+
+            <!-- primary -->
+<!--    <bean id="com1" class="org.vk.Laptop" primary="true"> </bean> --> <!-- if both are refers to the same type it give an error to solve it set primary. -->
+<!--    <bean id="com2" class="org.vk.Desktop"> </bean>-->
+
+            <!--  lazy-init  -->
+<!--        <bean id="com1" class="org.vk.Laptop" primary="true"> </bean>-->
+<!--        <bean id="com2" class="org.vk.Desktop" lazy-init="true"> </bean> --> <!-- "lazy-init" is use to avoid the default constructor of this class if the object of it is not created -->
+
+        <bean id="com1" class="org.vk.Laptop" primary="true"> </bean>
+        <bean class="org.vk.Laptop" lazy-init="true"> </bean>
 
 <!--    <bean id="alien2" class="org.vk.Alien">-->  <!-- you can also create a second object of a same Class -->
 <!--    </bean>-->
