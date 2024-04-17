@@ -26,6 +26,6 @@ public class App
 
 //        The both the object of "alien1" class is work as once.(One Bean multi object = once) (it's called "Singleton" Bean)
 
-        Desktop obj3 = context.getBean(Desktop.class);
+//        Desktop obj3 = context.getBean(Desktop.class);
     }
 }
