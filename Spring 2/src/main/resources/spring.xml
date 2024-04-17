@@ -57,8 +57,8 @@
 <!--        <bean id="com1" class="org.vk.Laptop" primary="true"> </bean>-->
 <!--        <bean id="com2" class="org.vk.Desktop" lazy-init="true"> </bean> --> <!-- "lazy-init" is use to avoid the default constructor of this class if the object of it is not created -->
 
-        <bean id="com1" class="org.vk.Laptop" primary="true"> </bean>
-        <bean class="org.vk.Laptop" lazy-init="true"> </bean>
+<!--        <bean id="com1" class="org.vk.Laptop" primary="true"> </bean>-->
+<!--        <bean class="org.vk.Laptop" lazy-init="true"> </bean>-->
 
 <!--    <bean id="alien2" class="org.vk.Alien">-->  <!-- you can also create a second object of a same Class -->
 <!--    </bean>-->
