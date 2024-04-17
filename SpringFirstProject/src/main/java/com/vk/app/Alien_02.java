@@ -4,10 +4,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component // it use to talk to Spring to create an Object of 'Alien'
-public class Alien {
+public class Alien_02 {
 
     @Autowired // it mean spring will find the 'Laptop' class That was "@Component"
-    Laptop laptop;
+    Laptop_03 laptop;
 
     public void Code() {
         laptop.compile();
