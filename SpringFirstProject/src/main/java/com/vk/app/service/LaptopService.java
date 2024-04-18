@@ -1,6 +1,6 @@
 package com.vk.app.service;
 
-import com.vk.app.LaptopRepository;
+import com.vk.app.repo.LaptopRepository;
 import com.vk.app.model.Laptop_03;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
