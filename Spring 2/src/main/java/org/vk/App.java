@@ -1,24 +1,28 @@
 package org.vk;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.vk.config.AppCofig;
 
 public class App
 {
     public static void main( String[] args )
     {
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml"); // create a container
+
+                    // XML base cnfig
+//        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml"); // create a container
         // "spring.xml" is create a main/resources
         // in the above line is create an object (if you run the constructor of 'Alian class' is called)
 
-        Alien obj1 = (Alien) context.getBean("alien1"); // create an object of container
+//        Alien obj1 = (Alien) context.getBean("alien1"); // create an object of container
 //        obj1.age = 21;
 //        System.out.println(obj1.age);
 
 //        obj1.setAge1(22);
-        System.out.println(obj1.getAge1());
+//        System.out.println(obj1.getAge1());
 
-        obj1.code();
+//        obj1.code();
 
 //        Alien obj2 = context.getBean("alien1", Alien.class); // create an object of container without type casting
 //        System.out.println(obj2.age);
@@ -26,6 +30,16 @@ public class App
 
 //        The both the object of "alien1" class is work as once.(One Bean multi object = once) (it's called "Singleton" Bean)
 
+//        Computer com = context.getBean(Computer.class); // Interface
+
 //        Desktop obj3 = context.getBean(Desktop.class);
+
+
+                // java base config
+
+        ApplicationContext conext = new AnnotationConfigApplicationContext(AppCofig.class);
+
+        Desktop dt =conext.getBean(Desktop.class);
+        dt.compile();
     }
 }

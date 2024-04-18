@@ -35,10 +35,15 @@
 
         <!-- autowire -->
             <!-- byname-->
-        <property name="age1" value="20" />
-        <property name="com" ref="com1" />  <!-- comment it and check it 'autowire' or not -->
+<!--        <property name="age1" value="20" />-->
+<!--        <property name="com" ref="com1" />--> <!-- comment it and check it 'autowire' or not -->
         <!-- 'autowire' while you can not mention it's property as above -->
-            <!-- bytype -->
+
+        <!-- Inner Bean-->
+        <property name="age1" value="20" />
+        <property name="com">
+            <bean id="com1" class="org.vk.Laptop" primary="true"> </bean> <!-- inner bean is use only to the inside a 'Alien' -->
+        </property>
     </bean>
 
     <!-- autowire -->
@@ -55,10 +60,11 @@
 
             <!--  lazy-init  -->
 <!--        <bean id="com1" class="org.vk.Laptop" primary="true"> </bean>-->
-<!--        <bean id="com2" class="org.vk.Desktop" lazy-init="true"> </bean> --> <!-- "lazy-init" is use to avoid the default constructor of this class if the object of it is not created -->
+<!--        <bean id="com2" class="org.vk.Desktop" lazy-init="true"> </bean> --> <!-- "lazy-init" is use to object of it is not created ny default only when you create it it will use -->
+            <!-- when the 'non-lazy' bean is reference to the 'lazy-bean' it will call the object -->
 
-<!--        <bean id="com1" class="org.vk.Laptop" primary="true"> </bean>-->
-<!--        <bean class="org.vk.Laptop" lazy-init="true"> </bean>-->
+<!--            <bean id="com1" class="org.vk.Laptop" primary="true"> </bean>-->
+<!--            <bean class="org.vk.Desktop" lazy-init="true"> </bean>-->
 
 <!--    <bean id="alien2" class="org.vk.Alien">-->  <!-- you can also create a second object of a same Class -->
 <!--    </bean>-->
