@@ -37,9 +37,22 @@ public class App
 
                 // java base config
 
-        ApplicationContext conext = new AnnotationConfigApplicationContext(AppCofig.class);
+        ApplicationContext context1 = new AnnotationConfigApplicationContext(AppCofig.class);
+//        Desktop dt = context1.getBean(Desktop.class);
 
-        Desktop dt =conext.getBean(Desktop.class);
-        dt.compile();
+            // Bean name
+//        Desktop dt = context1.getBean("desktop1",Desktop.class);
+//        the default name of bean is the method name
+
+            // scope
+//        Desktop dt = context1.getBean(Desktop.class);
+//        dt.compile();
+//        Desktop dt1 = context1.getBean(Desktop.class);
+//        dt1.compile();
+
+            // autowire
+        Alien obj1 = context1.getBean(Alien.class);
+        System.out.println(obj1.getAge1());
+        obj1.code();
     }
 }

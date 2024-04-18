@@ -1,8 +1,15 @@
 package org.vk;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component // it's use to connect to all of the class to the each other by Spring
 public class Alien {
 
     int age;
+    @Value("10")
     private int age1;
 
     public Alien() {
@@ -32,6 +39,8 @@ public class Alien {
 //        lap.compile();
 //    }
 
+    @Autowired // two match it's give an error
+//    @Qualifier("laptop") // Qualifier to which bean is use
     private Computer com;
     public Computer getCom() {
         return com;
