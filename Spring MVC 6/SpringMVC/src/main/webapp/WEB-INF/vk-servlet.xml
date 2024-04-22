@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:ctx="http://www.springframework.org/shema/context"
+xmlns:xsi="http://www.w3.org/2001/XMLShema-instance"
+xmlns:mvc="http://www.springframework.org/shema/mvc"
+xsi:schemaLocation="http://www.springframework.org/shema/beans
+http://www.springframework.org/shema/beans/spirng-bean.xsd
+http://www.springframework.org/shema/beans/mvc
+http://www.springframework.org/shema/beans/mvc/spring-mvc.xsd
+http://www.springframework.org/shema/beans/context
+http://www.springframework.org/shema/beans/context/spring-context.xsd">
+
+	<ctx:component-scan base-package="com.vk"/>
+	<ctx:annotation-config/>
+	
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver.class">
+		<property name="prefix" value="/views/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+
+</beans>
