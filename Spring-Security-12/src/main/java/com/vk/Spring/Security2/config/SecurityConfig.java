@@ -46,7 +46,11 @@ public class SecurityConfig {
 
         // lambda expression for all
         http.csrf(customizer -> customizer.disable());
-        http.authorizeHttpRequests(request -> request.anyRequest().authenticated());
+        http.authorizeHttpRequests(request -> request
+                                                .requestMatchers("register")
+                                                .permitAll()
+                                                .anyRequest()
+                                                .authenticated());
         http.httpBasic(Customizer.withDefaults());
         http.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 
