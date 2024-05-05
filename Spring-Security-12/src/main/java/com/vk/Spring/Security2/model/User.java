@@ -9,7 +9,7 @@ import lombok.Data;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // to Ganereta unique identity automatically
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // to Ganereta unique identity automatically (it's work on a new table)
     private int id;
     private String username;
     private String password;
