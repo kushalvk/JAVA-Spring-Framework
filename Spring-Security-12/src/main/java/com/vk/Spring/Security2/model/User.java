@@ -1,8 +1,6 @@
 package com.vk.Spring.Security2.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
@@ -11,6 +9,7 @@ import lombok.Data;
 public class User {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // to Ganereta unique identity automatically (it's work on a new table)
     private int id;
     private String username;
     private String password;
