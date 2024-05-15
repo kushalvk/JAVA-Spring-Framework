@@ -19,24 +19,24 @@ public class jobController {
         return "home"; // (home.jsp)
     }
 
-    @GetMapping("addjob") // get Request(url)
-    public String add() {
-        return "addjob"; // (addjob.jsp)
-    }
-
-    @Autowired
-    private JobService service;
-
-    @PostMapping("handleForm") // post Request(url)
-    public String handleform(JobPost jobpost) {
-        service.addJob(jobpost);
-        return "success"; // (success.jsp)
-    }
-
-    @GetMapping("viewalljobs")
-    public String viewalljobs(Model m) {
-        List<JobPost> jobs = service.getAllJobs();
-        m.addAttribute("jobPosts", jobs);
-        return "viewalljobs";
-    }
+//    @GetMapping("addjob") // get Request(url)
+//    public String add() {
+//        return "addjob"; // (addjob.jsp)
+//    }
+//
+//    @Autowired
+//    private JobService service;
+//
+//    @PostMapping("handleForm") // post Request(url)
+//    public String handleform(JobPost jobpost) {
+//        service.addJob(jobpost);
+//        return "success"; // (success.jsp)
+//    }
+//
+//    @GetMapping("viewalljobs")
+//    public String viewalljobs(Model m) {
+//        List<JobPost> jobs = service.getAllJobs();
+//        m.addAttribute("jobPosts", jobs);
+//        return "viewalljobs";
+//    }
 }
