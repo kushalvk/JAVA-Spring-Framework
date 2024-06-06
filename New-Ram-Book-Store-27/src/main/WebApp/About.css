@@ -1,0 +1,38 @@
+/* styles.css */
+body {
+    font-family: century;
+}
+
+.navbar {
+    margin-bottom: 30px;
+}
+
+.about-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.about-section h1 {
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    margin-bottom: 20px;
+}
+
+.team-section h2 {
+    margin-bottom: 40px;
+}
+
+.team-section .col-md-4 {
+    margin-bottom: 30px;
+}
+
+.team-section img {
+    max-height: 40%;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}

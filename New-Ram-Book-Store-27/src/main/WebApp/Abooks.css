@@ -1,0 +1,39 @@
+/* styles.css */
+body {
+    font-family: century;
+    background-color: #f8f9fa;
+}
+
+.header-section {
+    padding: 60px 0;
+    /* background-color: #007bff; */
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://www.shutterstock.com/image-illustration/modern-technologies-listening-audiobook-headphones-260nw-2192569997.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.books-section {
+    padding: 60px 0;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
