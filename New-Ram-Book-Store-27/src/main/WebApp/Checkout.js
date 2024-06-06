@@ -4,8 +4,7 @@ import { OrderItems } from './Cart.js';
 console.log(OrderItems);
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('checkout-form').addEventListener('submit', async function (e) {
-        e.preventDefault();
+    document.getElementById('checkout-form').addEventListener('submit', async function () {
 
         const order = {
             fullName: document.getElementById('name').value,
