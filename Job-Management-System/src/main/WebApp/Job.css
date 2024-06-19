@@ -1,0 +1,15 @@
+body {
+    font-family: century;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://static.vecteezy.com/system/resources/previews/015/685/152/non_2x/human-resource-management-strategic-planning-for-success-through-people-business-development-concept-by-choosing-professional-leaders-employee-competency-teamwork-man-pointing-virtual-icon-free-photo.jpg') no-repeat center center/cover;
+    color: aliceblue;
+}
+
+.card {
+    margin: 15%;
+    color: black;
+}
+
+input {
+    margin-right: 5px;
+    margin-top: 5px;
+}
