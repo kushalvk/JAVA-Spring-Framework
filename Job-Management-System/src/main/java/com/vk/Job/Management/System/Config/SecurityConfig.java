@@ -44,14 +44,18 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(authorizeRequest -> authorizeRequest
-                        .requestMatchers("/login","/ragister","/").permitAll()
-                        .anyRequest().authenticated()
-//                        .anyRequest().permitAll()
+                        .requestMatchers("/login","/ragister","/",  "/oauth2/authorization/**").permitAll()
+//                        .anyRequest().authenticated()
+                        .anyRequest().permitAll()
                 )
                 .formLogin(form -> form
                         .loginPage("/login").permitAll()
                         .defaultSuccessUrl("/home", true)
                         .failureUrl("/login?error=true")
+                )
+                .oauth2Login(oauth2Login -> oauth2Login
+                        .loginPage("/login")
+                        .defaultSuccessUrl("/home")
                 )
                 .logout(logout -> logout
                         .logoutUrl("/logout")
@@ -60,6 +64,7 @@ public class SecurityConfig {
                         .deleteCookies("JSESSIONID")
                 )
                 .httpBasic(Customizer.withDefaults())
+//                .oauth2Login(Customizer.withDefaults())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
 

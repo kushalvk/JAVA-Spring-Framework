@@ -34,6 +34,9 @@
                             <button type="submit" class="btn btn-primary btn-block">Login</button>
                         </form><br>
                         <p class="text-center mt-3">Don't have an account? <a href="ragister">Sign up</a></p>
+                        <h6>Or login with:</h6>
+                        <a href="/oauth2/authorization/google" class="btn btn-warning ">Google</a>
+                        <a href="/oauth2/authorization/github" class="btn btn-warning ">Github</a>
                     </div>
                 </div>
             </div>
