@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,6 +26,12 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <div class="icon">
+                            <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="User Icon">
+                            <p class="tooltip">${email}</p>
+                        </div>
                 </li>
             </ul>
         </div>

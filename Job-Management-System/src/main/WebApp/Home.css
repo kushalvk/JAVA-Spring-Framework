@@ -13,3 +13,36 @@ body {
 .undraw {
     margin: 30%;
 }
+
+.icon {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+        }
+
+        .icon img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .icon .tooltip {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: -100%;
+            left: 50%;
+            margin-left: -90px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .icon:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
