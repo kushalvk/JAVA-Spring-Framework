@@ -1,0 +1,54 @@
+Title: Apple iPhone 15 Pro (128GB, Natural Titanium)
+Description: Experience the power of the A17 Pro chip with a stunning 6.1-inch Super Retina XDR display and advanced camera system designed for professionals.
+Price: ₹1,34,900
+Category: Mobile Phones
+Features:
+    A17 Pro chip with 6-core GPU
+    48MP main camera, 3x telephoto zoom
+    Titanium design, USB-C port
+    Always-on display, Dynamic Island
+    iOS 17 compatible
+
+Title: Nike Air Max 270 Men's Running Shoes
+Description: Stylish and comfortable running shoes with a visible Air unit in the heel for maximum cushioning during daily wear or workouts.
+Price: ₹12,999
+Category: Footwear
+Features:
+    Breathable mesh upper
+    Foam midsole with Air cushioning
+    Lightweight design
+    Durable rubber outsole
+    Available in multiple colors
+
+Title: Dell Inspiron 14 (13th Gen i5, 16GB RAM, 512GB SSD, Win 11)
+Description: A sleek and powerful laptop for everyday multitasking and productivity with a long-lasting battery life.
+Price: ₹64,990
+Category: Laptops
+Features:
+    13th Gen Intel Core i5 processor
+    14-inch FHD anti-glare display
+    16GB DDR4 RAM, 512GB SSD
+    Windows 11 Home, MS Office included
+    Backlit keyboard
+
+Title: Fastrack Aviator Sunglasses (Model 3432BL1)
+Description: Trendy and lightweight aviator sunglasses offering UV400 protection with a classic metal frame design.
+Price: ₹1,499
+Category: Accessories
+Features:
+    UV400 protection lenses
+    Metal frame, scratch-resistant
+    Comfortable nose pads
+    Unisex design
+    Hard case included
+
+Title: Philips PowerPro Compact Bagless Vacuum Cleaner (FC9352/01)
+Description: Compact and powerful vacuum cleaner with PowerCyclone 5 technology for efficient cleaning performance.
+Price: ₹9,499
+Category: Home Appliances
+Features:
+    1900W strong suction power
+    Advanced dust container design
+    HEPA filter for allergen removal
+    Lightweight and easy to carry
+    2-year warranty
